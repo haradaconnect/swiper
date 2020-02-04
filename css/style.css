@@ -178,6 +178,18 @@ main .container {
   width: auto;
   height: auto;
 }
+.swiper-container p {
+  font-size: 1.5em;
+  background-color: rgba(255, 255 ,255, 0.8);
+  border-radius: 2px;
+  position: absolute;
+  -webkit-transform: translate(-50%, 0);
+      -ms-transform: translate(-50%, 0);
+          transform: translate(-50%, 0);
+  left: 100px;
+  top: 0px;
+  padding: 5px 20px;
+}
 .swiper-button-next {
   right: 40px;
 }
@@ -217,7 +229,9 @@ main .container {
   opacity: 1;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets {
+  text-align: left;
   bottom: 40px;
+  padding-left: 20px;
 }
 .swiper-container-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet {
   margin: 0 10px;

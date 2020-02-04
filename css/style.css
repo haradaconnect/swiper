@@ -269,6 +269,7 @@ main .container {
 /* Nav. button */
   .navBtn {
     display: block;
+    z-index: 100;
   }
   .open .navBtn {
     transform: rotate(270deg);
@@ -287,6 +288,7 @@ main .container {
     left: 100%;
     transition: 0.3s ease-in-out;
     overflow-y: auto;
+    z-index: 100;
     padding: 60px 0 10px;
   }
   nav a {
@@ -311,5 +313,27 @@ main .container {
   }
   section {
     padding: 20px 0;
+  }
+/*====================================
+  Section firstView
+====================================*/
+  #firstView {
+    min-width: 100%;
+    height: calc(100vh - 70px);
+  }
+  .swiper-container-horizontal > .swiper-pagination-bullets {
+    text-align: center;
+    padding-left: 0px;
+    display: flex;
+    justify-content: center;
+    bottom: 45px;
+  }
+  .swiper-pagination-bullet {
+    width: 15px;
+    height: 5px;
+    border-radius: 0;
+  }
+  .swiper-button-next, .swiper-button-prev {
+    display: none;
   }
 }
